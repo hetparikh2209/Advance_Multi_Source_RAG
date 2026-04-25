@@ -1,0 +1,92 @@
+.area {
+  padding: 14px 20px 16px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  flex-shrink: 0;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.inputWrap {
+  flex: 1;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--r-lg);
+  padding: 10px 14px;
+  transition: border-color 0.2s;
+}
+
+.inputWrap:focus-within {
+  border-color: var(--accent);
+}
+
+.textarea {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 13.5px;
+  line-height: 1.6;
+  resize: none;
+  width: 100%;
+  max-height: 120px;
+  min-height: 22px;
+  display: block;
+}
+
+.textarea::placeholder {
+  color: var(--text3);
+}
+
+.textarea:disabled {
+  opacity: 0.5;
+}
+
+.sendBtn {
+  width: 42px;
+  height: 42px;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--r);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.1s;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.sendBtn:hover:not(:disabled) {
+  background: var(--accent2);
+  transform: scale(1.04);
+}
+
+.sendBtn:disabled {
+  background: var(--surface3);
+  cursor: not-allowed;
+}
+
+.sendBtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+.hint {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 7px;
+  padding-left: 2px;
+}

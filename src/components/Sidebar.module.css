@@ -1,0 +1,223 @@
+.sidebar {
+  width: 248px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 16px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #7c6aff, #a594ff);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.logo svg {
+  width: 15px;
+  height: 15px;
+}
+
+.brandName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.brandModel {
+  font-size: 11px;
+  color: var(--text3);
+  margin-left: auto;
+  font-family: var(--mono);
+}
+
+.section {
+  padding: 14px 14px 6px;
+}
+
+.sectionLabel {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* URL input */
+.urlBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-bg);
+  border: 1px solid var(--green-border);
+  border-radius: var(--r);
+  padding: 8px 10px;
+}
+
+.urlIcon {
+  width: 13px;
+  height: 13px;
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.urlInput {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--green);
+  width: 100%;
+  min-width: 0;
+}
+
+.urlInput::placeholder {
+  color: #3fcf7355;
+}
+
+/* Drop zone */
+.dropZone {
+  border: 1.5px dashed var(--border2);
+  border-radius: var(--r);
+  padding: 18px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.dropZone:hover,
+.dropZone.dragOver {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.dropZone:hover .dropIcon,
+.dropZone.dragOver .dropIcon {
+  stroke: var(--accent2);
+}
+
+.dropIcon {
+  width: 22px;
+  height: 22px;
+  stroke: var(--text3);
+  stroke-width: 1.5;
+  margin-bottom: 6px;
+}
+
+.dropText {
+  font-size: 12px;
+  color: var(--text2);
+  margin-bottom: 2px;
+}
+
+.dropHint {
+  font-size: 10px;
+  color: var(--text3);
+  font-family: var(--mono);
+}
+
+/* File list */
+.fileList {
+  padding: 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+/* Settings block at bottom */
+.settingsBlock {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding: 14px 14px 12px;
+}
+
+.configRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.configLabel {
+  font-size: 12px;
+  color: var(--text2);
+  flex: 1;
+}
+
+.chunkControl {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chunkBtn {
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  background: var(--surface2);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.chunkBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.chunkVal {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  min-width: 16px;
+  text-align: center;
+}
+
+.sessionBox {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--r);
+  padding: 9px 11px;
+}
+
+.sessionLabel {
+  font-size: 10px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 3px;
+}
+
+.sessionId {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
